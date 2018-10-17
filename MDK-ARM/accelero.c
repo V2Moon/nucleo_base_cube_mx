@@ -2,6 +2,13 @@
 #include "accelero.h"
 #include "MyGPIO.h"
 
+//Idée 1 : scruter avec le timer pour les IT régulières
+//Dans le handler on regarde 1 chanel (on peut connaitre
+//L'angle limite en ne mesurant qu'un seul axe)
+
+//Idée 2 : configurer l'ADC avec une IT qui se déclenche
+//A l'angle limite !! (plus besoin du timer et des valeurs)
+
 //Le PIN pour accéléro - X
 GPIO_Struct_TypeDef *AcceleroGPIOX;
 AcceleroGPIOX[1] = GPIOC;//, IN_PIN, INPUT_FLOATING};
