@@ -31,7 +31,8 @@ void set_g_select ()
 //Choisi la précision du capteur
 //Pas sleep 2=1, 1=0	
 	
-}
+}//test
+
 
 //Return l'angle de roulis
 int get_angle ()
