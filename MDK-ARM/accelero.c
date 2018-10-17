@@ -18,9 +18,11 @@ void init_Accelero ()
 
 }
 
-void config_ADC_IN10 () // IN 11 à faire aussi
+void config_ADC_IN10 () // IN 11 à faire aussi + config le DMA
 {
-	//Clock
+	//ON -> Clk on
+	ADC_CHANNEL_10 |= ADC_CR2_ADON;
+
 	
 }
 
@@ -28,10 +30,10 @@ void config_ADC_IN10 () // IN 11 à faire aussi
 //Paramétrer le capteur
 void set_g_select ()
 {
-//Choisi la précision du capteur
-//Pas sleep 2=1, 1=0	
+//Choisir la précision du capteur
+//Pas sleep mode (2=1, 1=0)
 	
-}//test
+}
 
 
 //Return l'angle de roulis
@@ -43,11 +45,11 @@ int get_angle ()
 }
 
 
-//Configuration d'une IT (faire avec une structure)
+//Configuration d'une IT (faire avec une structure ?)
 void initNVIC (void)
 {
 
 }
-//NVIC + Périph + handler ou tout écrire à la main ?
-//IT = changement des valeurs de l'angle roulis
+//initNVIC + initPériph + handler
+//IT = changement des valeurs de l'angle roulis (cf DMA)
 //Handler = regarde si >45
