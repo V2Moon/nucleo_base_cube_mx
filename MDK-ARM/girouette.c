@@ -2,6 +2,8 @@
 #include "girouette.h"
 #include "gpio.h"
 
+void interface_encoder_mode() {
+
 	TIM3->CCER  &= ~(0x0011) ; /*mise à 0 de CC1E et CC2E pour pouvoir écrire dans CC1S et CC2S */
 	
 	
@@ -26,4 +28,10 @@
 	
 	TIM3->SMCR &= ~0x0007 ; /*mise à 0 des bits 0 à 2*/
 	TIM3->SMCR |= 0x0003 ; /*SMS = "011" -> Counter counts up/down on both
-	TI1FP1 and TI2FP2 edges si les deux entrées n'arrivent pas en meme temps */
+										TI1FP1 and TI2FP2 edges si les deux entrées n'arrivent pas en meme temps */
+	
+
+
+
+	TIM3->CR1 |= 0x0001 ; // CEN =1 activer le counter
+}

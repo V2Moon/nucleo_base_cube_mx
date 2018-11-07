@@ -10,7 +10,7 @@
       <TargetName>Simu_nucleo_base_cube_mx</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -324,6 +324,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -654,6 +655,21 @@
               <FileName>accelero.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\accelero.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Girouette</GroupName>
+          <Files>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -979,6 +995,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -1309,6 +1326,21 @@
               <FileName>accelero.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\accelero.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Girouette</GroupName>
+          <Files>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
