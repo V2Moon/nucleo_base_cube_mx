@@ -10,7 +10,7 @@
       <TargetName>Simu_nucleo_base_cube_mx</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -324,6 +324,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -643,17 +644,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Accéléro</GroupName>
+          <GroupName>Battery</GroupName>
           <Files>
             <File>
-              <FileName>accelero.c</FileName>
+              <FileName>check_battery.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\accelero.c</FilePath>
-            </File>
-            <File>
-              <FileName>accelero.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\accelero.h</FilePath>
+              <FilePath>..\Src\check_battery.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -979,6 +975,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -1298,17 +1295,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Accéléro</GroupName>
+          <GroupName>Battery</GroupName>
           <Files>
             <File>
-              <FileName>accelero.c</FileName>
+              <FileName>check_battery.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\accelero.c</FilePath>
-            </File>
-            <File>
-              <FileName>accelero.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\accelero.h</FilePath>
+              <FilePath>..\Src\check_battery.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "stm32f10x.h"
 #include "stm32f1xx_hal.h"
-#include "check_battery.h"
+//#include "check_battery.h"
 
 /*=================================================================================
 Autor : NIRINA Carrel
@@ -40,5 +40,11 @@ void init_ADC1(void){
 	ADC_ChannelConfTypeDef ADC_InitChannel;
 	ADC_InitChannel.Channel = ADC_CHANNEL_12;
 	ADC_InitChannel.Rank = ADC_REGULAR_RANK_1;
-	
+	//init Handle ADC
+	ADC_HandleTypeDef ADC_InitHandle;
+	ADC_InitHandle.Instance = ADC1;
+	ADC_InitHandle.Init = ADC_InitStruct;
+	//CALL HAL FUNCTION FOR INIT
+	HAL_ADC_Init(&ADC_InitHandle);
+	HAL_ADC_ConfigChannel(&ADC_InitHandle,&ADC_InitChannel);
 }
