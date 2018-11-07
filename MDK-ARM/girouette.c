@@ -35,3 +35,9 @@ void interface_encoder_mode() {
 
 	TIM3->CR1 |= 0x0001 ; // CEN =1 activer le counter
 }
+
+int lire_angle() {
+	
+	return TIM3->CNT ;
+	
+}

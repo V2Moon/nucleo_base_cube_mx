@@ -4,7 +4,7 @@
 
 void interface_encoder_mode();
 
-
+int lire_angle();
 
 
 #endif
