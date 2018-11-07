@@ -655,6 +655,16 @@
               <FileType>5</FileType>
               <FilePath>.\accelero.h</FilePath>
             </File>
+            <File>
+              <FileName>MyGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\MyGPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyGPIO.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\MyGPIO.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1309,6 +1319,16 @@
               <FileName>accelero.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\accelero.h</FilePath>
+            </File>
+            <File>
+              <FileName>MyGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\MyGPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>MyGPIO.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\MyGPIO.h</FilePath>
             </File>
           </Files>
         </Group>
